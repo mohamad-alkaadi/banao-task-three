@@ -1,0 +1,42 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.page-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.half-one {
+  width: 40%;
+  background-color: #15253a;
+  position: relative;
+}
+
+.half-two {
+  width: 60%;
+  background-color: lightcyan;
+  height: 100vh;
+  overflow: auto;
+}
+.circle {
+  width: 400px;
+  height: 400px;
+  background-color: red;
+  position: absolute;
+  top: 100px;
+  right: -20%;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle1 {
+  width: 88%;
+  height: 88%;
+  background-color: lightblue;
+  border-radius: 100%;
+}
