@@ -11,16 +11,19 @@ body {
 
 .half-one {
   width: 40%;
-  background-color: #15253a;
+  background-color: #551196;
   position: relative;
   height: 100vh;
 }
 
 .half-two {
   width: 60%;
-  background-color: #0d131b;
+  background-color: #c6c6c8;
   height: 100vh;
   overflow: auto;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .half-two-test {
   height: 700vh;
@@ -29,7 +32,7 @@ body {
 .circle {
   width: 400px;
   height: 400px;
-  background-color: #15253a;
+  background-color: #551196;
   position: absolute;
   top: 100px;
   right: -20%;
@@ -91,7 +94,7 @@ html {
 }
 
 .progressbar-circle {
-  background-color: #15253a;
+  background-color: #551196;
   width: 34.4rem;
   height: 34.4rem;
   border-radius: 50%;
@@ -216,7 +219,7 @@ button {
 }
 
 .main-title {
-  background-color: #15253a;
+  background-color: #551196;
   margin-top: 220px;
   height: 240px;
   display: flex;
