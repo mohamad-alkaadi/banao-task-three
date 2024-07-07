@@ -20,7 +20,9 @@ body {
   width: 60%;
   background-color: #c6c6c8;
   height: 100vh;
-  overflow: auto;
+  /* overflow: auto; */
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
   background-image: none;
   background-repeat: no-repeat;
   background-size: cover;
@@ -255,6 +257,15 @@ button {
 }
 /* --------------------------------- */
 
+.slide-1,
+.slide-2,
+.slide-3,
+.slide-4,
+.slide-5,
+.slide-6,
+.slide-7 {
+  scroll-snap-align: start;
+}
 .slide-1 {
   height: 100vh;
   display: flex;
@@ -442,4 +453,26 @@ button {
   grid-column: 8/11;
   grid-row: 1/11;
   z-index: 10;
+}
+
+.slide-1-title {
+  display: none;
+}
+.slide-2-title {
+  display: none;
+}
+.slide-3-title {
+  display: none;
+}
+.slide-4-title {
+  display: none;
+}
+.slide-5-title {
+  display: none;
+}
+.slide-6-title {
+  display: none;
+}
+.slide-7-title {
+  display: block;
 }

@@ -1,5 +1,11 @@
 gsap.registerPlugin(ScrollTrigger)
 
+ScrollTrigger.defaults({
+  toggleActions: "restart pause resume pause",
+  scroller: ".half-two-test",
+})
+
+// gsap.to("")
 const halfCircles = document.querySelectorAll(".half-circle")
 const halfCircleTop = document.querySelector(".half-circle-top")
 const progressBarCircle = document.querySelector(".progressbar-circle")
@@ -273,7 +279,7 @@ let slideSevenImgOneTween = gsap.fromTo(
   {
     y: 180,
     opacity: 1,
-    duration: 0.5,
+    duration: 0.2,
     paused: true,
   }
 )
@@ -287,7 +293,7 @@ let slideSevenImgTwoTween = gsap.fromTo(
   {
     y: 180,
     opacity: 1,
-    duration: 0.5,
+    duration: 0.2,
     paused: true,
   }
 )
@@ -331,9 +337,10 @@ halfTwo.addEventListener("scroll", () => {
     slideFiveImgThreeTween.reverse()
     slideFiveImgFourTween.reverse()
     slideFiveImgFiveTween.reverse()
-  } else if (scrolledPortionPercent < 11) {
+  } else if (scrolledPortionPercent > 3 && scrolledPortionPercent < 11) {
     slideOneImgOneTween.reverse()
     slideOneImgTwoTween.reverse()
+    scrolledPortionPercent = 12
   } else if (scrolledPortionPercent === 12) {
     slideTwoImgOneTween.play()
     slideTwoImgTwoTween.play()
@@ -373,12 +380,21 @@ halfTwo.addEventListener("scroll", () => {
     slideFiveImgThreeTween.play()
     slideFiveImgFourTween.play()
     slideFiveImgFiveTween.play()
+  } else if (scrolledPortionPercent == 53) {
+    slideFiveImgOneTween.reverse()
+    slideFiveImgTwoTween.reverse()
+    slideFiveImgThreeTween.reverse()
+    slideFiveImgFourTween.reverse()
+    slideFiveImgFiveTween.reverse()
   } else if (scrolledPortionPercent < 62) {
     slideSixImgOneTween.reverse()
   } else if (scrolledPortionPercent == 62) {
     slideSixImgOneTween.play()
   } else if (scrolledPortionPercent == 65) {
     slideSixImgOneTween.reverse()
+  } else if (scrolledPortionPercent < 75) {
+    slideSevenImgOneTween.reverse()
+    slideSevenImgTwoTween.reverse()
   } else if (scrolledPortionPercent == 75) {
     slideSevenImgOneTween.play()
     slideSevenImgTwoTween.play()
