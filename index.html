@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css"
+      integrity="sha512-KhFXpe+VJEu5HYbJyKQs9VvwGB+jQepqb4ZnlhUF/jQGxYJcjdxOTf6cr445hOc791FFLs18DKVpfrQnONOB1g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="page-container">
@@ -293,6 +300,84 @@
         <!-- </div> -->
       </div>
     </div>
+    <!-- ---------------------mobile--------------------------- -->
+    <section class="splide mobile-view" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <!-- slide one -->
+          <li class="splide__slide ">
+            <div class="top mob-slide-1-top"> 
+              <img
+              src="./assets/nexgtv-entertainment-mobile-app-development-mob.png"
+              alt="songs"
+            />
+            <img
+              src="./assets/nexgtv-mobile-app-ui-design-mob.png"
+              alt="songs"
+            /></div> 
+            <div class="bottom mob-slide-1-bottom">
+              <img
+              class="mob-slide-1-img"
+              src="./assets/world-communication-awards-for-best-digital-experience.png"
+              alt=""
+            />
+            <h2 class="slide-paragrph-title mob-slide-1-title">ABC 123</h2>
+            <p class="slide-paragrph-paragrph mob-slide-1-paragrph">
+              This is sample text for ABC 123. This is sample text for ABC 123
+            </p>
+              <div class="mob-slide-1-action">View Case Study -></div>
+          </li>
+          <!-- slide two -->
+
+          <li class="splide__slide ">
+            <div class="top mob-slide-2-top">
+              <img
+            src="./assets/veme-blockchain-app-developed.png"
+            alt="sign up"
+          />
+          <img
+            src="./assets/veme-app-ui-design.png"
+            alt="gif"
+          />
+        </div>
+            <div class="bottom mob-slide-2-bottom">
+            <h2 class="slide-paragrph-title mob-slide-2-title">ABC 1</h2>
+            <p class="slide-paragrph-paragrph mob-slide-2-paragrph">
+              This is sample text for ABC 1
+            </p>
+              <div class="mob-slide-2-action">Case Study - <span>Coming Soon</span> </div>
+          </li>
+          <!-- slide 3 -->
+          <li class="splide__slide ">
+            <div class="top mob-slide-3-top">
+              <img class="mob-slide-3-top-1"
+            src="./assets/nasa-fitness-tracking-mobile-app-mob.png"
+            alt="trainer"
+          />
+          <img  class="mob-slide-3-top-2"
+            src="./assets/measure-total-body-weight-through-fitness-app2.png"
+            alt="tracker"
+          />
+        </div>
+            <div class="bottom mob-slide-3-bottom">
+            <h2 class="slide-paragrph-title mob-slide-3-title">ABC 2</h2>
+            <p class="slide-paragrph-paragrph mob-slide-3-paragrph">
+              This is sample text for ABC 2
+            </p>
+              <div class="mob-slide-3-action">Case Study - <span>Coming Soon</span> </div>
+          </li>
+          <li class="splide__slide">
+            <div class="top">s</div> 
+            <div class="bottom">x<div>
+          </li>
+          <li class="splide__slide">
+            <div class="top">s</div> 
+            <div class="bottom">x<div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -301,5 +386,18 @@
     <script src="js/anime.min.js"></script>
     <script src="js/path-slider.js"></script>
     <script src="app.js"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"
+    integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      new Splide(".splide",{
+        perPage: 1,
+        padding:0,
+        gap:0
+      }).mount()
+      </script>
   </body>
 </html>
