@@ -305,8 +305,10 @@ button {
 }
 .slide-7-title {
   display: none;
+  height: 240px;
   /* display: none; */
   flex-direction: column;
+  justify-content: center;
   padding-right: 50px;
 }
 
