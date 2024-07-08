@@ -374,7 +374,7 @@ halfTwo.addEventListener("scroll", () => {
     slideFourImgThreeTween.reverse()
     slideFourImgFourTween.reverse()
     slideFourImgFiveTween.reverse()
-  } else if (scrolledPortionPercent == 49) {
+  } else if (scrolledPortionPercent == 50) {
     slideFiveImgOneTween.play()
     slideFiveImgTwoTween.play()
     slideFiveImgThreeTween.play()
@@ -401,7 +401,7 @@ halfTwo.addEventListener("scroll", () => {
   }
 
   // -----------------------------condition end-------------------------
-
+  console.log(scrolledPortionPercent)
   if (scrolledPortionPercent < 12) {
     circleTwo.style.backgroundColor = "#91c0ff"
     circleThree.style.backgroundColor = "#91c0ff"
