@@ -839,6 +839,7 @@ button {
   bottom: 84%;
   background: #fff;
   margin-left: 80px;
+  z-index: 111;
 }
 .mob-slide-1-title {
   margin-left: 80px;
@@ -1236,4 +1237,62 @@ button {
   font-size: 20px;
   color: #fff;
   font-weight: 100;
+}
+
+/* slide 7 */
+.mob-slide-7-top {
+  display: grid;
+  width: 100vw;
+  background-color: #00b769;
+  background-size: cover;
+  overflow: hidden;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.mob-slide-7-top-1 {
+  grid-column: span 4;
+  z-index: 110;
+  scale: 90%;
+}
+.mob-slide-7-top-2 {
+  margin-top: 60px;
+  grid-column: span 4;
+  z-index: 10;
+  scale: 90%;
+}
+.mob-slide-7-bottom {
+  background-color: #00834c;
+  position: relative;
+}
+
+.mob-slide-7-title {
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.mob-slide-7-paragrph {
+  margin-left: 80px;
+  margin-top: 20px;
+}
+.mob-slide-7-action {
+  margin-left: 80px;
+  margin-top: 50px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+.mob-slide-7-action span {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 8px 10px 8px 10px;
+  background-color: #fff;
+  color: #00834c;
+}
+
+.mob-slide-7-img {
+  position: absolute;
+  bottom: 84%;
+  margin-left: 80px;
+  z-index: 111;
 }
