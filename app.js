@@ -21,6 +21,21 @@ const halfTwo = document.querySelector(".half-two")
 const halfOne = document.querySelector(".half-one")
 const mainTitle = document.querySelector(".main-title")
 const slideOne = document.querySelector(".slide-1")
+const slideOneParagraph = document.querySelector(".slide-1-paragrph")
+const slideTwoParagraph = document.querySelector(".slide-2-paragrph")
+const slideThreeParagraph = document.querySelector(".slide-3-paragrph")
+const slideFourParagraph = document.querySelector(".slide-4-paragrph")
+const slideFiveParagraph = document.querySelector(".slide-5-paragrph")
+const slideSixParagraph = document.querySelector(".slide-6-paragrph")
+const slideSevenParagraph = document.querySelector(".slide-7-paragrph")
+
+const TitleOne = document.querySelector(".slide-1-title")
+const TitleTwo = document.querySelector(".slide-2-title")
+const TitleThree = document.querySelector(".slide-3-title")
+const TitleFour = document.querySelector(".slide-4-title")
+const TitleFive = document.querySelector(".slide-5-title")
+const TitleSix = document.querySelector(".slide-6-title")
+const TitleSeven = document.querySelector(".slide-7-title")
 
 const pageViewportHeight = window.innerHeight
 const pageHeight = document.documentElement.scrollHeight * 7
@@ -401,7 +416,6 @@ halfTwo.addEventListener("scroll", () => {
   }
 
   // -----------------------------condition end-------------------------
-  console.log(scrolledPortionPercent)
   if (scrolledPortionPercent < 12) {
     circleTwo.style.backgroundColor = "#91c0ff"
     circleThree.style.backgroundColor = "#91c0ff"
@@ -419,6 +433,21 @@ halfTwo.addEventListener("scroll", () => {
     // slideOneImgTwoTween.play()
     // slideTwoImgOneTween.reverse()
     // slideTwoImgTwoTween.reverse()
+    TitleOne.style.display = "flex"
+    TitleTwo.style.display = "none"
+    TitleThree.style.display = "none"
+    TitleFour.style.display = "none"
+    TitleFive.style.display = "none"
+    TitleSix.style.display = "none"
+    TitleSeven.style.display = "none"
+
+    slideOneParagraph.style.display = "block"
+    slideTwoParagraph.style.display = "none"
+    slideThreeParagraph.style.display = "none"
+    slideFourParagraph.style.display = "none"
+    slideFiveParagraph.style.display = "none"
+    slideSixParagraph.style.display = "none"
+    slideSevenParagraph.style.display = "none"
   } else if (scrolledPortionPercent >= 12 && scrolledPortionPercent < 25) {
     circleTwo.style.backgroundColor = "#0189ff"
     circleThree.style.backgroundColor = "#91c0ff"
@@ -436,6 +465,21 @@ halfTwo.addEventListener("scroll", () => {
     // slideOneImgTwoTween.reverse()
     // slideTwoImgOneTween.play()
     // slideTwoImgTwoTween.play()
+    TitleOne.style.display = "none"
+    TitleTwo.style.display = "flex"
+    TitleThree.style.display = "none"
+    TitleFour.style.display = "none"
+    TitleFive.style.display = "none"
+    TitleSix.style.display = "none"
+    TitleSeven.style.display = "none"
+
+    slideOneParagraph.style.display = "none"
+    slideTwoParagraph.style.display = "block"
+    slideThreeParagraph.style.display = "none"
+    slideFourParagraph.style.display = "none"
+    slideFiveParagraph.style.display = "none"
+    slideSixParagraph.style.display = "none"
+    slideSevenParagraph.style.display = "none"
   } else if (scrolledPortionPercent >= 25 && scrolledPortionPercent < 37) {
     circleTwo.style.backgroundColor = "#0189ff"
     circleThree.style.backgroundColor = "#0189ff"
@@ -449,6 +493,22 @@ halfTwo.addEventListener("scroll", () => {
     mainTitle.style.backgroundColor = "#0b0e32"
     halfTwo.style.backgroundColor = "#131644"
     halfTwo.style.backgroundImage = "none"
+
+    TitleOne.style.display = "none"
+    TitleTwo.style.display = "none"
+    TitleThree.style.display = "flex"
+    TitleFour.style.display = "none"
+    TitleFive.style.display = "none"
+    TitleSix.style.display = "none"
+    TitleSeven.style.display = "none"
+
+    slideOneParagraph.style.display = "none"
+    slideTwoParagraph.style.display = "none"
+    slideThreeParagraph.style.display = "block"
+    slideFourParagraph.style.display = "none"
+    slideFiveParagraph.style.display = "none"
+    slideSixParagraph.style.display = "none"
+    slideSevenParagraph.style.display = "none"
   } else if (scrolledPortionPercent >= 37 && scrolledPortionPercent < 49) {
     circleTwo.style.backgroundColor = "#0189ff"
     circleThree.style.backgroundColor = "#0189ff"
@@ -462,6 +522,22 @@ halfTwo.addEventListener("scroll", () => {
     mainTitle.style.backgroundColor = "#15253a"
     halfTwo.style.backgroundColor = "#0d131b"
     halfTwo.style.backgroundImage = "none"
+
+    TitleOne.style.display = "none"
+    TitleTwo.style.display = "none"
+    TitleThree.style.display = "none"
+    TitleFour.style.display = "flex"
+    TitleFive.style.display = "none"
+    TitleSix.style.display = "none"
+    TitleSeven.style.display = "none"
+
+    slideOneParagraph.style.display = "none"
+    slideTwoParagraph.style.display = "none"
+    slideThreeParagraph.style.display = "none"
+    slideFourParagraph.style.display = "block"
+    slideFiveParagraph.style.display = "none"
+    slideSixParagraph.style.display = "none"
+    slideSevenParagraph.style.display = "none"
   } else if (scrolledPortionPercent >= 49 && scrolledPortionPercent < 62) {
     circleTwo.style.backgroundColor = "#0189ff"
     circleThree.style.backgroundColor = "#0189ff"
@@ -475,6 +551,22 @@ halfTwo.addEventListener("scroll", () => {
     mainTitle.style.backgroundColor = "#0f4492"
     halfTwo.style.backgroundColor = "#2dcddd"
     halfTwo.style.backgroundImage = "none"
+
+    TitleOne.style.display = "none"
+    TitleTwo.style.display = "none"
+    TitleThree.style.display = "none"
+    TitleFour.style.display = "none"
+    TitleFive.style.display = "flex"
+    TitleSix.style.display = "none"
+    TitleSeven.style.display = "none"
+
+    slideOneParagraph.style.display = "none"
+    slideTwoParagraph.style.display = "none"
+    slideThreeParagraph.style.display = "none"
+    slideFourParagraph.style.display = "none"
+    slideFiveParagraph.style.display = "block"
+    slideSixParagraph.style.display = "none"
+    slideSevenParagraph.style.display = "none"
   } else if (scrolledPortionPercent >= 62 && scrolledPortionPercent < 74) {
     circleTwo.style.backgroundColor = "#0189ff"
     circleThree.style.backgroundColor = "#0189ff"
@@ -487,6 +579,22 @@ halfTwo.addEventListener("scroll", () => {
     progressBarCircle.style.backgroundColor = "#012787"
     mainTitle.style.backgroundColor = "#012787"
     halfTwo.style.backgroundImage = "url('./assets/interior.jpg')"
+
+    TitleOne.style.display = "none"
+    TitleTwo.style.display = "none"
+    TitleThree.style.display = "none"
+    TitleFour.style.display = "none"
+    TitleFive.style.display = "none"
+    TitleSix.style.display = "flex"
+    TitleSeven.style.display = "none"
+
+    slideOneParagraph.style.display = "none"
+    slideTwoParagraph.style.display = "none"
+    slideThreeParagraph.style.display = "none"
+    slideFourParagraph.style.display = "none"
+    slideFiveParagraph.style.display = "none"
+    slideSixParagraph.style.display = "block"
+    slideSevenParagraph.style.display = "none"
   } else {
     circleTwo.style.backgroundColor = "#0189ff"
     circleThree.style.backgroundColor = "#0189ff"
@@ -500,6 +608,22 @@ halfTwo.addEventListener("scroll", () => {
     mainTitle.style.backgroundColor = "#00834c"
     halfTwo.style.backgroundColor = "#00b769"
     halfTwo.style.backgroundImage = "none"
+
+    TitleOne.style.display = "none"
+    TitleTwo.style.display = "none"
+    TitleThree.style.display = "none"
+    TitleFour.style.display = "none"
+    TitleFive.style.display = "none"
+    TitleSix.style.display = "none"
+    TitleSeven.style.display = "flex"
+
+    slideOneParagraph.style.display = "none"
+    slideTwoParagraph.style.display = "none"
+    slideThreeParagraph.style.display = "none"
+    slideFourParagraph.style.display = "none"
+    slideFiveParagraph.style.display = "none"
+    slideSixParagraph.style.display = "none"
+    slideSevenParagraph.style.display = "block"
   }
 })
 

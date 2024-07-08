@@ -1,6 +1,14 @@
+.half-two::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.para-para {
+  display: none;
+}
 body {
   padding: 0;
   margin: 0;
+  font-family: "Bai Jamjuree", sans-serif;
 }
 
 .page-container {
@@ -26,6 +34,8 @@ body {
   background-image: none;
   background-repeat: no-repeat;
   background-size: cover;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
 }
 .half-two-test {
   height: 700vh;
@@ -231,7 +241,7 @@ button {
 }
 .main-title-content {
   color: #fff;
-  margin-right: 65px;
+  /* margin-right: 65px; */
   display: flex;
   flex-direction: column;
   /* justify-content: space-around; */
@@ -239,7 +249,7 @@ button {
   font-style: normal;
 }
 
-.main-title-content h3 {
+/* .main-title-content h3 {
   font-size: 20px;
   font-weight: 100;
   padding: 0;
@@ -251,11 +261,169 @@ button {
   font-weight: 700;
   padding: 0;
   margin: 5px;
+} */
+/* .third-line {
+  align-self: end;
+} */
+
+.slide-1-title {
+  /* display: flex; */
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
 }
-.third-line {
+.slide-2-title {
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  padding-left: 50px;
+}
+.slide-3-title {
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  padding-left: 50px;
+}
+.slide-4-title {
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  padding-left: 50px;
+}
+.slide-5-title {
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  padding-left: 50px;
+}
+.slide-6-title {
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  padding-left: 50px;
+}
+.slide-7-title {
+  display: none;
+  /* display: none; */
+  flex-direction: column;
+  padding-right: 50px;
+}
+
+.slide-1-title-h1 {
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+}
+.slide-1-title-h3 {
+  font-size: 20px;
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
   align-self: end;
 }
-/* --------------------------------- */
+/* ------- */
+.slide-2-title-h1 {
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+}
+.slide-2-title-h3-1,
+.slide-2-title-h3-2 {
+  font-size: 20px;
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
+}
+
+.slide-2-title-h3-2 {
+  align-self: end;
+}
+/* ------- */
+.slide-3-title-h3-1,
+.slide-3-title-h3-2 {
+  font-size: 23px;
+  font-weight: 100;
+  padding: 5px 0 5px 0;
+  margin: 0;
+}
+.slide-3-title-h3-2 {
+  align-self: end;
+}
+/* ----------------------------------------- */
+.slide-1-paragrph {
+  display: block;
+}
+.slide-2-paragrph {
+  display: none;
+}
+.slide-3-paragrph {
+  display: none;
+}
+.slide-4-paragrph {
+  display: none;
+}
+.slide-5-paragrph {
+  display: none;
+}
+.slide-6-paragrph {
+  display: none;
+}
+.slide-7-paragrph {
+  display: none;
+}
+.slide-paragrph {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 60px;
+}
+.slide-1-paragrph-img {
+  margin: 0;
+  padding: 0;
+}
+.slide-paragrph-title {
+  font-size: 60px;
+  color: #fff;
+  margin: 0;
+  margin-top: 20px;
+}
+.slide-paragrph-paragrph {
+  font-size: 18px;
+  font-weight: 100;
+  color: #fff;
+  margin-bottom: 120px;
+}
+
+.action-sec {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 100;
+}
+.action {
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.soon {
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skip {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-weight: 100;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------------------- */
 
 .slide-1,
 .slide-2,
@@ -453,26 +621,4 @@ button {
   grid-column: 8/11;
   grid-row: 1/11;
   z-index: 10;
-}
-
-.slide-1-title {
-  display: none;
-}
-.slide-2-title {
-  display: none;
-}
-.slide-3-title {
-  display: none;
-}
-.slide-4-title {
-  display: none;
-}
-.slide-5-title {
-  display: none;
-}
-.slide-6-title {
-  display: none;
-}
-.slide-7-title {
-  display: block;
 }
