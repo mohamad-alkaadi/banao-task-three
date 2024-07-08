@@ -389,6 +389,12 @@ halfTwo.addEventListener("scroll", () => {
     slideFourImgThreeTween.reverse()
     slideFourImgFourTween.reverse()
     slideFourImgFiveTween.reverse()
+  } else if (scrolledPortionPercent < 50) {
+    slideFiveImgOneTween.reverse()
+    slideFiveImgTwoTween.reverse()
+    slideFiveImgThreeTween.reverse()
+    slideFiveImgFourTween.reverse()
+    slideFiveImgFiveTween.reverse()
   } else if (scrolledPortionPercent == 50) {
     slideFiveImgOneTween.play()
     slideFiveImgTwoTween.play()
