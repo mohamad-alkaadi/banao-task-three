@@ -857,6 +857,12 @@ button {
   font-weight: 100;
 }
 
+@media (max-width: 702px) {
+  .mob-slide-1-top img {
+    width: 237px;
+    height: 624px;
+  }
+}
 /* slide 2 */
 
 .mob-slide-2-top {
@@ -905,6 +911,7 @@ button {
   justify-content: center;
   gap: 20px;
   background-color: #131644;
+  overflow: hidden;
 }
 /* .mob-slide-3-top img {
   width: 302px;
@@ -1190,4 +1197,43 @@ button {
     width: 203px;
     height: 444px;
   }
+}
+
+/* slide 6 */
+.mob-slide-6-top {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  /* background-color: #c3c3c5; */
+  background-image: url("./assets/interior.jpg");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.mob-slide-6-top img {
+  width: 562px;
+  height: 544px;
+}
+.mob-slide-6-bottom {
+  background-color: #012787;
+  position: relative;
+}
+
+.mob-slide-6-title {
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.mob-slide-6-paragrph {
+  margin-left: 80px;
+  margin-top: 50px;
+}
+.mob-slide-6-action {
+  margin-left: 80px;
+  margin-top: 50px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 100;
 }
