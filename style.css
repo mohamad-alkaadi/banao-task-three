@@ -815,7 +815,7 @@ button {
   background-color: lightgreen;
 }
 
-/* slide w1 */
+/* slide 1 */
 .mob-slide-1-top {
   display: flex;
   justify-content: center;
@@ -943,4 +943,134 @@ button {
 .mob-slide-3-top-2 {
   width: 250px;
   height: 453px;
+}
+
+/* slide 4 */
+.mob-slide-4-top {
+  background-color: #0d131b;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  /* height: 100%; */
+  overflow: hidden;
+}
+
+.mob-slide-4-bottom {
+  background-color: #15253a;
+  position: relative;
+}
+
+.mob-slide-4-img {
+  position: absolute;
+  bottom: 84%;
+  background: #fff;
+  margin-left: 80px;
+}
+.mob-slide-4-title {
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.mob-slide-4-paragrph {
+  margin-left: 80px;
+  margin-top: 50px;
+}
+.mob-slide-4-action {
+  margin-left: 80px;
+  margin-top: 50px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 100;
+}
+
+.mob-slide-4-top-1 {
+  width: 167px;
+  height: 125px;
+  grid-column: 1/3;
+  grid-row: 1/3;
+  margin-bottom: 30px;
+  /* display: none; */
+}
+
+.mob-slide-4-top-2 {
+  width: 218px;
+  height: 425px;
+  /* display: none; */
+  grid-column: 1/4;
+  grid-row: 3/8;
+  margin-top: 80px;
+  margin-left: 40px;
+}
+
+.mob-slide-4-top-3 {
+  width: 190px;
+  height: 440px;
+  /* display: none; */
+  grid-column: 5/8;
+  grid-row: 1/6;
+  margin-bottom: 40px;
+}
+
+.mob-slide-4-top-4 {
+  width: 161px;
+  height: 101px;
+  grid-column: 8/9;
+  grid-row: 1/2;
+  overflow: hidden;
+}
+
+.mob-slide-4-top-5 {
+  /* width: 303px;
+  height: 167px; */
+  grid-column: 8/9;
+  grid-row: 3/4;
+  justify-self: end;
+  margin-left: 70px;
+  overflow: hidden;
+}
+
+.mob-slide-4-top-6 {
+  /* width: 303px;
+  height: 167px; */
+  grid-column: 8/9;
+  grid-row: 4/6;
+  width: 279px;
+  /* display: none; */
+  width: 249px;
+  height: 143px;
+  align-self: end;
+}
+
+@media (min-width: 758px) {
+  .mob-slide-4-top-1 {
+    width: 167px;
+    height: 125px;
+  }
+
+  .mob-slide-4-top-2 {
+    width: 318px;
+    height: 525px;
+  }
+
+  .mob-slide-4-top-3 {
+    width: 290px;
+    height: 540px;
+  }
+
+  .mob-slide-4-top-4 {
+    width: 161px;
+    height: 101px;
+  }
+
+  .mob-slide-4-top-5 {
+    /* width: 303px;
+    height: 167px; */
+  }
+
+  .mob-slide-4-top-6 {
+    width: 279px;
+
+    width: 249px;
+    height: 143px;
+  }
 }
